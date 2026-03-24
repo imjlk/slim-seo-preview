@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+.wp-env/
+.wp-env.override.json
+npm-debug.log*
+artifacts/
+*.zip

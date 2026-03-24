@@ -1,0 +1,27 @@
+{
+  "name": "slim-seo-preview",
+  "version": "0.1.0",
+  "description": "A lightweight Gutenberg preview panel for Slim SEO.",
+  "license": "GPL-2.0-or-later",
+  "private": true,
+  "engines": {
+    "node": ">=20.18.0"
+  },
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "plugin-zip": "wp-scripts plugin-zip",
+    "plugin-zip:org": "node ./scripts/package-org.mjs",
+    "slim-seo:clone": "node ./scripts/slim-seo.mjs clone",
+    "slim-seo:prepare": "node ./scripts/slim-seo.mjs prepare",
+    "slim-seo:use:tag": "node ./scripts/slim-seo.mjs tag",
+    "slim-seo:use:master": "node ./scripts/slim-seo.mjs master",
+    "env:start": "npm run slim-seo:clone && npm run slim-seo:prepare && wp-env start",
+    "env:destroy": "printf 'y\\n' | wp-env destroy",
+    "env:logs": "wp-env logs"
+  },
+  "devDependencies": {
+    "@wordpress/env": "11.2.0",
+    "@wordpress/scripts": "31.7.0"
+  }
+}
