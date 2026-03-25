@@ -1,0 +1,204 @@
+{
+    "translation-revision-date": "2026-03-25T12:02:49+00:00",
+    "generator": "WP-CLI\/2.11.0",
+    "source": "build\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "ko_KR",
+                "plural-forms": "nplurals=1; plural=0;"
+            },
+            "Slim SEO Preview": [
+                "Slim SEO Preview"
+            ],
+            "You do not have permission to update SEO settings for this item.": [
+                "\uc774 \ud56d\ubaa9\uc758 SEO \uc124\uc815\uc744 \uc5c5\ub370\uc774\ud2b8\ud560 \uad8c\ud55c\uc774 \uc5c6\uc2b5\ub2c8\ub2e4."
+            ],
+            "Jump to Slim SEO meta box": [
+                "Slim SEO \uba54\ud0c0 \ubc15\uc2a4\ub85c \uc774\ub3d9"
+            ],
+            "The Slim SEO meta box could not be found on this screen.": [
+                "\uc774 \ud654\uba74\uc5d0\uc11c Slim SEO \uba54\ud0c0 \ubc15\uc2a4\ub97c \ucc3e\uc744 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4."
+            ],
+            "Preview": [
+                "\ubbf8\ub9ac\ubcf4\uae30"
+            ],
+            "URL preview unavailable": [
+                "URL \ubbf8\ub9ac\ubcf4\uae30\ub97c \uc0ac\uc6a9\ud560 \uc218 \uc5c6\uc74c"
+            ],
+            "SEO title preview will appear here.": [
+                "SEO \uc81c\ubaa9 \ubbf8\ub9ac\ubcf4\uae30\uac00 \uc5ec\uae30\uc5d0 \ud45c\uc2dc\ub429\ub2c8\ub2e4."
+            ],
+            "Meta description preview will appear here.": [
+                "\uba54\ud0c0 \uc124\uba85 \ubbf8\ub9ac\ubcf4\uae30\uac00 \uc5ec\uae30\uc5d0 \ud45c\uc2dc\ub429\ub2c8\ub2e4."
+            ],
+            "All": [
+                "\uc804\uccb4"
+            ],
+            "Images": [
+                "\uc774\ubbf8\uc9c0"
+            ],
+            "News": [
+                "\ub274\uc2a4"
+            ],
+            "Videos": [
+                "\ub3d9\uc601\uc0c1"
+            ],
+            "Search preview": [
+                "\uac80\uc0c9 \ubbf8\ub9ac\ubcf4\uae30"
+            ],
+            "Search": [
+                "\uac80\uc0c9"
+            ],
+            "Previewing how this result could appear on a desktop search page.": [
+                "\uc774 \uacb0\uacfc\uac00 \ub370\uc2a4\ud06c\ud1b1 \uac80\uc0c9 \ud398\uc774\uc9c0\uc5d0\uc11c \uc5b4\ub5bb\uac8c \ubcf4\uc77c\uc9c0 \ubbf8\ub9ac \ubcf4\uc5ec\uc90d\ub2c8\ub2e4."
+            ],
+            "SERP Preview": [
+                "SERP \ubbf8\ub9ac\ubcf4\uae30"
+            ],
+            "Noindex": [
+                "Noindex"
+            ],
+            "Title": [
+                "\uc81c\ubaa9"
+            ],
+            "Description": [
+                "\uc124\uba85"
+            ],
+            "Canonical": [
+                "Canonical"
+            ],
+            "Open SERP preview": [
+                "SERP \ubbf8\ub9ac\ubcf4\uae30 \uc5f4\uae30"
+            ],
+            "Open Graph Preview": [
+                "Open Graph \ubbf8\ub9ac\ubcf4\uae30"
+            ],
+            "Open Graph": [
+                "Open Graph"
+            ],
+            "OG title preview will appear here.": [
+                "OG \uc81c\ubaa9 \ubbf8\ub9ac\ubcf4\uae30\uac00 \uc5ec\uae30\uc5d0 \ud45c\uc2dc\ub429\ub2c8\ub2e4."
+            ],
+            "OG description preview will appear here.": [
+                "OG \uc124\uba85 \ubbf8\ub9ac\ubcf4\uae30\uac00 \uc5ec\uae30\uc5d0 \ud45c\uc2dc\ub429\ub2c8\ub2e4."
+            ],
+            "Applied Schema": [
+                "\uc801\uc6a9\ub41c \uc2a4\ud0a4\ub9c8"
+            ],
+            "Source URL": [
+                "\uc6d0\ubcf8 URL"
+            ],
+            "Scripts found": [
+                "\ucc3e\uc740 \uc2a4\ud06c\ub9bd\ud2b8"
+            ],
+            "Loading\u2026": [
+                "\ubd88\ub7ec\uc624\ub294 \uc911\u2026"
+            ],
+            "Entities found": [
+                "\ucc3e\uc740 \uc5d4\ud2f0\ud2f0"
+            ],
+            "Last fetched": [
+                "\ub9c8\uc9c0\ub9c9 \uc870\ud68c"
+            ],
+            "Reads the saved frontend JSON-LD currently rendered on the page. Unsaved editor changes are not included.": [
+                "\ud604\uc7ac \ud398\uc774\uc9c0\uc5d0 \ub80c\ub354\ub9c1\ub41c \uc800\uc7a5\ub41c \ud504\ub7f0\ud2b8\uc5d4\ub4dc JSON-LD\ub97c \uc77d\uc2b5\ub2c8\ub2e4. \uc800\uc7a5\ub418\uc9c0 \uc54a\uc740 \ud3b8\uc9d1\uae30 \ubcc0\uacbd \uc0ac\ud56d\uc740 \ud3ec\ud568\ub418\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4."
+            ],
+            "No JSON-LD schema was found on the rendered page.": [
+                "\ub80c\ub354\ub9c1\ub41c \ud398\uc774\uc9c0\uc5d0\uc11c JSON-LD \uc2a4\ud0a4\ub9c8\ub97c \ucc3e\uc9c0 \ubabb\ud588\uc2b5\ub2c8\ub2e4."
+            ],
+            "Refreshing\u2026": [
+                "\uc0c8\ub85c \uace0\uce58\ub294 \uc911\u2026"
+            ],
+            "Refresh applied schema": [
+                "\uc801\uc6a9\ub41c \uc2a4\ud0a4\ub9c8 \uc0c8\ub85c \uace0\uce68"
+            ],
+            "Open schema preview": [
+                "\uc2a4\ud0a4\ub9c8 \ubbf8\ub9ac\ubcf4\uae30 \uc5f4\uae30"
+            ],
+            "entities": [
+                "\uc5d4\ud2f0\ud2f0"
+            ],
+            "Invalid JSON-LD": [
+                "\uc798\ubabb\ub41c JSON-LD"
+            ],
+            "Slim SEO graph": [
+                "Slim SEO \uadf8\ub798\ud504"
+            ],
+            "Compare how the saved page may appear in desktop and mobile search results.": [
+                "\uc800\uc7a5\ub41c \ud398\uc774\uc9c0\uac00 \ub370\uc2a4\ud06c\ud1b1\uacfc \ubaa8\ubc14\uc77c \uac80\uc0c9 \uacb0\uacfc\uc5d0\uc11c \uc5b4\ub5bb\uac8c \ubcf4\uc77c\uc9c0 \ube44\uad50\ud574\ubcf4\uc138\uc694."
+            ],
+            "Device Preview": [
+                "\uae30\uae30 \ubbf8\ub9ac\ubcf4\uae30"
+            ],
+            "Desktop": [
+                "\ub370\uc2a4\ud06c\ud1b1"
+            ],
+            "Mobile": [
+                "\ubaa8\ubc14\uc77c"
+            ],
+            "Source": [
+                "\uc6d0\ubcf8"
+            ],
+            "Applied Schema Preview": [
+                "\uc801\uc6a9\ub41c \uc2a4\ud0a4\ub9c8 \ubbf8\ub9ac\ubcf4\uae30"
+            ],
+            "This reads the saved frontend JSON-LD currently rendered on the page, after Slim SEO hooks and filters run.": [
+                "Slim SEO\uc758 \ud6c5\uacfc \ud544\ud130\uac00 \uc2e4\ud589\ub41c \ub4a4 \ud604\uc7ac \ud398\uc774\uc9c0\uc5d0 \ub80c\ub354\ub9c1\ub41c \uc800\uc7a5\ub41c \ud504\ub7f0\ud2b8\uc5d4\ub4dc JSON-LD\ub97c \uc77d\uc2b5\ub2c8\ub2e4."
+            ],
+            "Overview": [
+                "\uac1c\uc694"
+            ],
+            "Scripts": [
+                "\uc2a4\ud06c\ub9bd\ud2b8"
+            ],
+            "Entities": [
+                "\uc5d4\ud2f0\ud2f0"
+            ],
+            "Fetched": [
+                "\uc870\ud68c \uc2dc\uac01"
+            ],
+            "Rendered Scripts": [
+                "\ub80c\ub354\ub9c1\ub41c \uc2a4\ud06c\ub9bd\ud2b8"
+            ],
+            "Slim SEO Preview could not load Slim SEO data.": [
+                "Slim SEO Preview\uac00 Slim SEO \ub370\uc774\ud130\ub97c \ubd88\ub7ec\uc624\uc9c0 \ubabb\ud588\uc2b5\ub2c8\ub2e4."
+            ],
+            "Slim SEO Preview could not load the applied schema graph.": [
+                "Slim SEO Preview\uac00 \uc801\uc6a9\ub41c \uc2a4\ud0a4\ub9c8 \uadf8\ub798\ud504\ub97c \ubd88\ub7ec\uc624\uc9c0 \ubabb\ud588\uc2b5\ub2c8\ub2e4."
+            ],
+            "Noindex (locked by post type setting)": [
+                "Noindex (\uae00 \ud0c0\uc785 \uc124\uc815\uc73c\ub85c \uc7a0\uae40)"
+            ],
+            "Noindex (set for this item)": [
+                "Noindex (\uc774 \ud56d\ubaa9\uc5d0 \uc124\uc815\ub428)"
+            ],
+            "Index": [
+                "Index"
+            ],
+            "Failed to update the noindex state. Use the Slim SEO meta box below instead.": [
+                "noindex \uc0c1\ud0dc\ub97c \uc5c5\ub370\uc774\ud2b8\ud558\uc9c0 \ubabb\ud588\uc2b5\ub2c8\ub2e4. \ub300\uc2e0 \uc544\ub798\uc758 Slim SEO \uba54\ud0c0 \ubc15\uc2a4\ub97c \uc0ac\uc6a9\ud558\uc138\uc694."
+            ],
+            "Quick Controls": [
+                "\ube60\ub978 \uc81c\uc5b4"
+            ],
+            "Indexing status": [
+                "\uc778\ub371\uc2f1 \uc0c1\ud0dc"
+            ],
+            "This post type is globally set to noindex in Slim SEO.": [
+                "\uc774 \uae00 \ud0c0\uc785\uc740 Slim SEO\uc5d0\uc11c \uc804\uc5ed\uc801\uc73c\ub85c noindex\ub85c \uc124\uc815\ub418\uc5b4 \uc788\uc2b5\ub2c8\ub2e4."
+            ],
+            "Hide from search results": [
+                "\uac80\uc0c9 \uacb0\uacfc\uc5d0\uc11c \uc228\uae30\uae30"
+            ],
+            "Per-post editing is disabled because the whole post type is globally set to noindex.": [
+                "\uc804\uccb4 \uae00 \ud0c0\uc785\uc774 \uc804\uc5ed\uc801\uc73c\ub85c noindex\ub85c \uc124\uc815\ub418\uc5b4 \uc788\uc5b4 \uae00\ubcc4 \ud3b8\uc9d1\uc774 \ube44\ud65c\uc131\ud654\ub418\uc5b4 \uc788\uc2b5\ub2c8\ub2e4."
+            ],
+            "This quick toggle saves directly from the sidebar. Other SEO fields still live in the Slim SEO meta box below.": [
+                "\uc774 \ube60\ub978 \ud1a0\uae00\uc740 \uc0ac\uc774\ub4dc\ubc14\uc5d0\uc11c \ubc14\ub85c \uc800\uc7a5\ub429\ub2c8\ub2e4. \ub2e4\ub978 SEO \ud544\ub4dc\ub294 \uc544\ub798\uc758 Slim SEO \uba54\ud0c0 \ubc15\uc2a4\uc5d0\uc11c \uacc4\uc18d \ud3b8\uc9d1\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4."
+            ]
+        }
+    }
+}

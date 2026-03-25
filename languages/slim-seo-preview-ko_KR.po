@@ -1,0 +1,387 @@
+# Copyright (C) 2026 imjlk
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Slim SEO Preview 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/slim-seo-preview\n"
+"Last-Translator: imjlk <i@m.junglei.kim>\n"
+"Language-Team: Korean\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-03-25T12:02:49+00:00\n"
+"PO-Revision-Date: 2026-03-25T12:02:49+00:00\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: slim-seo-preview\n"
+"Language: ko_KR\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. Plugin Name of the plugin
+#: slim-seo-preview.php src/index.js:1086
+msgid "Slim SEO Preview"
+msgstr "Slim SEO Preview"
+
+#. Description of the plugin
+#: slim-seo-preview.php
+msgid ""
+"Adds Gutenberg SERP, Open Graph, and applied schema previews for Slim SEO "
+"with a quick noindex toggle."
+msgstr ""
+"Slim SEO용 구텐베르크 SERP, Open Graph, 적용된 스키마 미리보기를 제공하고 "
+"빠른 noindex 토글을 추가합니다."
+
+#. Author of the plugin
+#: slim-seo-preview.php
+msgid "imjlk"
+msgstr "imjlk"
+
+#: src/Editor.php:28
+msgid "Slim SEO Preview requires Slim SEO to be installed and active."
+msgstr "Slim SEO Preview를 사용하려면 Slim SEO가 설치 및 활성화되어 있어야 합니다."
+
+#: src/Editor.php:86
+msgid "Slim SEO Preview requires Slim SEO to stay active."
+msgstr "Slim SEO Preview를 사용하려면 Slim SEO가 계속 활성화되어 있어야 합니다."
+
+#: src/Editor.php:87 src/index.js:1168
+msgid "You do not have permission to update SEO settings for this item."
+msgstr "이 항목의 SEO 설정을 업데이트할 권한이 없습니다."
+
+#: src/Editor.php:88
+msgid ""
+"Slim SEO Preview could not load Slim SEO data. The existing Slim SEO meta "
+"box remains available below."
+msgstr ""
+"Slim SEO Preview가 Slim SEO 데이터를 불러오지 못했습니다. 기존 Slim SEO 메타 "
+"박스는 아래에서 계속 사용할 수 있습니다."
+
+#: src/Editor.php:89
+msgid ""
+"This post type is globally set to noindex in Slim SEO, so the per-post "
+"toggle is locked here."
+msgstr ""
+"이 글 타입은 Slim SEO에서 전역적으로 noindex로 설정되어 있어, 개별 글 토글이 "
+"여기서는 잠겨 있습니다."
+
+#: src/Editor.php:90 src/index.js:1184
+msgid "Jump to Slim SEO meta box"
+msgstr "Slim SEO 메타 박스로 이동"
+
+#: src/Editor.php:91 src/index.js:1185
+msgid "The Slim SEO meta box could not be found on this screen."
+msgstr "이 화면에서 Slim SEO 메타 박스를 찾을 수 없습니다."
+
+#: src/Editor.php:152
+msgid "A valid post ID is required."
+msgstr "유효한 글 ID가 필요합니다."
+
+#: src/Editor.php:160 src/Editor.php:233
+msgid "The requested post could not be found."
+msgstr "요청한 글을 찾을 수 없습니다."
+
+#: src/Editor.php:168
+msgid "You are not allowed to preview or update SEO data for this post."
+msgstr "이 글의 SEO 데이터를 미리 보거나 업데이트할 권한이 없습니다."
+
+#: src/Editor.php:181
+msgid "Slim SEO must be active to read noindex state."
+msgstr "noindex 상태를 읽으려면 Slim SEO가 활성화되어 있어야 합니다."
+
+#: src/Editor.php:194
+msgid "Slim SEO must be active to update noindex state."
+msgstr "noindex 상태를 업데이트하려면 Slim SEO가 활성화되어 있어야 합니다."
+
+#: src/Editor.php:224
+msgid "Slim SEO must be active to read schema preview data."
+msgstr "스키마 미리보기 데이터를 읽으려면 Slim SEO가 활성화되어 있어야 합니다."
+
+#: src/Editor.php:241
+msgid ""
+"Applied schema preview is only available for publicly viewable entries "
+"because it reads the saved frontend HTML."
+msgstr ""
+"적용된 스키마 미리보기는 저장된 프런트엔드 HTML을 읽기 때문에 공개적으로 볼 "
+"수 있는 항목에서만 사용할 수 있습니다."
+
+#: src/Editor.php:253
+msgid "Slim SEO Preview could not determine a frontend URL for this entry."
+msgstr "Slim SEO Preview가 이 항목의 프런트엔드 URL을 확인하지 못했습니다."
+
+#. translators: %d: HTTP status code.
+#: src/Editor.php:295
+msgid ""
+"Slim SEO Preview could not load the rendered page. HTTP %d was returned."
+msgstr ""
+"Slim SEO Preview가 렌더링된 페이지를 불러오지 못했습니다. HTTP %d 응답이 "
+"반환되었습니다."
+
+#: src/Editor.php:303
+msgid "Slim SEO Preview could not load the rendered page."
+msgstr "Slim SEO Preview가 렌더링된 페이지를 불러오지 못했습니다."
+
+#: src/Editor.php:374
+msgid "The post ID for the current editor entry."
+msgstr "현재 편집기 항목의 글 ID입니다."
+
+#. translators: %d: script index.
+#: src/Editor.php:512
+msgid "JSON-LD Script %d"
+msgstr "JSON-LD 스크립트 %d"
+
+#: src/index.js:191 src/index.js:371
+msgid "Preview"
+msgstr "미리보기"
+
+#: src/index.js:193 src/index.js:351 src/index.js:404 src/index.js:586
+#: src/index.js:623
+msgid "URL preview unavailable"
+msgstr "URL 미리보기를 사용할 수 없음"
+
+#: src/index.js:211
+msgid "SEO title preview will appear here."
+msgstr "SEO 제목 미리보기가 여기에 표시됩니다."
+
+#: src/index.js:214
+msgid "Meta description preview will appear here."
+msgstr "메타 설명 미리보기가 여기에 표시됩니다."
+
+#: src/index.js:223
+msgid "All"
+msgstr "전체"
+
+#: src/index.js:225
+msgid "Images"
+msgstr "이미지"
+
+#: src/index.js:226
+msgid "News"
+msgstr "뉴스"
+
+#: src/index.js:228
+msgid "Videos"
+msgstr "동영상"
+
+#: src/index.js:249 src/index.js:1014
+msgid "Search preview"
+msgstr "검색 미리보기"
+
+#: src/index.js:259 src/index.js:303
+msgid "Search"
+msgstr "검색"
+
+#: src/index.js:272
+msgid "Previewing how this result could appear on a desktop search page."
+msgstr "이 결과가 데스크톱 검색 페이지에서 어떻게 보일지 미리 보여줍니다."
+
+#: src/index.js:331 src/index.js:511
+msgid "SERP Preview"
+msgstr "SERP 미리보기"
+
+#: src/index.js:338
+msgid "Noindex"
+msgstr "Noindex"
+
+#: src/index.js:342 src/index.js:577
+msgid "Title"
+msgstr "제목"
+
+#: src/index.js:346 src/index.js:581
+msgid "Description"
+msgstr "설명"
+
+#: src/index.js:350 src/index.js:585
+msgid "Canonical"
+msgstr "Canonical"
+
+#: src/index.js:354
+msgid "Open SERP preview"
+msgstr "SERP 미리보기 열기"
+
+#: src/index.js:362
+msgid "Open Graph Preview"
+msgstr "Open Graph 미리보기"
+
+#: src/index.js:375
+msgid "Open Graph"
+msgstr "Open Graph"
+
+#: src/index.js:376
+msgid "OG title preview will appear here."
+msgstr "OG 제목 미리보기가 여기에 표시됩니다."
+
+#: src/index.js:377
+msgid "OG description preview will appear here."
+msgstr "OG 설명 미리보기가 여기에 표시됩니다."
+
+#: src/index.js:390
+msgid "Applied Schema"
+msgstr "적용된 스키마"
+
+#: src/index.js:403 src/index.js:622
+msgid "Source URL"
+msgstr "원본 URL"
+
+#: src/index.js:407
+msgid "Scripts found"
+msgstr "찾은 스크립트"
+
+#: src/index.js:410 src/index.js:418
+msgid "Loading…"
+msgstr "불러오는 중…"
+
+#: src/index.js:415
+msgid "Entities found"
+msgstr "찾은 엔티티"
+
+#: src/index.js:423
+msgid "Last fetched"
+msgstr "마지막 조회"
+
+#: src/index.js:428
+msgid ""
+"Reads the saved frontend JSON-LD currently rendered on the page. Unsaved "
+"editor changes are not included."
+msgstr ""
+"현재 페이지에 렌더링된 저장된 프런트엔드 JSON-LD를 읽습니다. 저장되지 않은 "
+"편집기 변경 사항은 포함되지 않습니다."
+
+#: src/index.js:439 src/index.js:671
+msgid "No JSON-LD schema was found on the rendered page."
+msgstr "렌더링된 페이지에서 JSON-LD 스키마를 찾지 못했습니다."
+
+#: src/index.js:450 src/index.js:646
+msgid "Refreshing…"
+msgstr "새로 고치는 중…"
+
+#: src/index.js:451 src/index.js:647
+msgid "Refresh applied schema"
+msgstr "적용된 스키마 새로 고침"
+
+#: src/index.js:458
+msgid "Open schema preview"
+msgstr "스키마 미리보기 열기"
+
+#: src/index.js:472
+msgid "entities"
+msgstr "엔티티"
+
+#: src/index.js:473
+msgid "Invalid JSON-LD"
+msgstr "잘못된 JSON-LD"
+
+#: src/index.js:478
+msgid "Slim SEO graph"
+msgstr "Slim SEO 그래프"
+
+#: src/index.js:518
+msgid ""
+"Compare how the saved page may appear in desktop and mobile search results."
+msgstr ""
+"저장된 페이지가 데스크톱과 모바일 검색 결과에서 어떻게 보일지 비교해보세요."
+
+#: src/index.js:526
+msgid "Device Preview"
+msgstr "기기 미리보기"
+
+#: src/index.js:536
+msgid "Desktop"
+msgstr "데스크톱"
+
+#: src/index.js:541
+msgid "Mobile"
+msgstr "모바일"
+
+#: src/index.js:571
+msgid "Source"
+msgstr "원본"
+
+#: src/index.js:601
+msgid "Applied Schema Preview"
+msgstr "적용된 스키마 미리보기"
+
+#: src/index.js:608
+msgid ""
+"This reads the saved frontend JSON-LD currently rendered on the page, after "
+"Slim SEO hooks and filters run."
+msgstr ""
+"Slim SEO의 훅과 필터가 실행된 뒤 현재 페이지에 렌더링된 저장된 프런트엔드 "
+"JSON-LD를 읽습니다."
+
+#: src/index.js:616
+msgid "Overview"
+msgstr "개요"
+
+#: src/index.js:626
+msgid "Scripts"
+msgstr "스크립트"
+
+#: src/index.js:630
+msgid "Entities"
+msgstr "엔티티"
+
+#: src/index.js:634
+msgid "Fetched"
+msgstr "조회 시각"
+
+#: src/index.js:653
+msgid "Rendered Scripts"
+msgstr "렌더링된 스크립트"
+
+#: src/index.js:866 src/index.js:981
+msgid "Slim SEO Preview could not load Slim SEO data."
+msgstr "Slim SEO Preview가 Slim SEO 데이터를 불러오지 못했습니다."
+
+#: src/index.js:915
+msgid "Slim SEO Preview could not load the applied schema graph."
+msgstr "Slim SEO Preview가 적용된 스키마 그래프를 불러오지 못했습니다."
+
+#: src/index.js:1000
+msgid "Noindex (locked by post type setting)"
+msgstr "Noindex (글 타입 설정으로 잠김)"
+
+#: src/index.js:1001
+msgid "Noindex (set for this item)"
+msgstr "Noindex (이 항목에 설정됨)"
+
+#: src/index.js:1002
+msgid "Index"
+msgstr "Index"
+
+#: src/index.js:1059
+msgid ""
+"Failed to update the noindex state. Use the Slim SEO meta box below instead."
+msgstr ""
+"noindex 상태를 업데이트하지 못했습니다. 대신 아래의 Slim SEO 메타 박스를 "
+"사용하세요."
+
+#: src/index.js:1132
+msgid "Quick Controls"
+msgstr "빠른 제어"
+
+#: src/index.js:1138
+msgid "Indexing status"
+msgstr "인덱싱 상태"
+
+#: src/index.js:1150
+msgid "This post type is globally set to noindex in Slim SEO."
+msgstr "이 글 타입은 Slim SEO에서 전역적으로 noindex로 설정되어 있습니다."
+
+#: src/index.js:1161
+msgid "Hide from search results"
+msgstr "검색 결과에서 숨기기"
+
+#: src/index.js:1170
+msgid ""
+"Per-post editing is disabled because the whole post type is globally set to "
+"noindex."
+msgstr ""
+"전체 글 타입이 전역적으로 noindex로 설정되어 있어 글별 편집이 비활성화되어 "
+"있습니다."
+
+#: src/index.js:1171
+msgid ""
+"This quick toggle saves directly from the sidebar. Other SEO fields still "
+"live in the Slim SEO meta box below."
+msgstr ""
+"이 빠른 토글은 사이드바에서 바로 저장됩니다. 다른 SEO 필드는 아래의 Slim "
+"SEO 메타 박스에서 계속 편집할 수 있습니다."
