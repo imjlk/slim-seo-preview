@@ -12,14 +12,11 @@ const stagePluginDir = resolve( stageRoot, pluginDirName );
 const zipPath = resolve( artifactsDir, 'slim-seo-preview-org.zip' );
 
 const includedPaths = [
-	'README.md',
 	'readme.txt',
 	'slim-seo-preview.php',
 	'build',
 	'src',
 	'languages',
-	'package.json',
-	'package-lock.json',
 ];
 
 function ensureDirectory( path ) {

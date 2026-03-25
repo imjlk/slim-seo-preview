@@ -35,10 +35,12 @@ npm install
 npm run slim-seo:clone
 npm run slim-seo:use:tag -- 4.9.1
 npm run env:start
+npm run build
 ```
 
 This boots a local `wp-env` site with both plugins mounted and activated.
 `env:start` also prepares Composer dependencies and frontend build assets inside the sibling Slim SEO clone when needed.
+This repository keeps generated `build/` assets out of Git, so run `npm run build` once before opening the editor UI or `npm run start` for watch mode.
 
 ### Switch Slim SEO versions
 
@@ -78,6 +80,34 @@ Create a WordPress.org submission package with source + build files and without 
 ```bash
 npm run plugin-zip:org
 ```
+
+## Release and WordPress.org deployment
+
+GitHub is source-only in this repository. Built assets are generated locally for development and in CI for releases.
+
+### One-time setup
+
+1. Submit the plugin to WordPress.org and wait until the review team gives you the plugin slug and SVN access.
+2. In GitHub repository settings, add these Actions secrets:
+   - `SVN_USERNAME`
+   - `SVN_PASSWORD`
+3. If the WordPress.org plugin slug ever differs from this repository name, update the workflow `SLUG` value accordingly.
+
+### Release flow
+
+1. Update the plugin version in `slim-seo-preview.php`.
+2. Update `Stable tag` and changelog in `readme.txt`.
+3. Commit and push those changes to `main`.
+4. Create a GitHub release for the version. Either `0.1.0` or `v0.1.0` works; the workflow strips a leading `v` before deploying to WordPress.org.
+5. GitHub Actions will:
+   - install dependencies
+   - build `build/`
+   - assemble a WordPress.org-ready package in `artifacts/submission/slim-seo-preview`
+   - deploy that package to the WordPress.org SVN repository
+
+### What lands in WordPress.org SVN
+
+The release workflow deploys the packaged output, not the raw Git checkout. That means Git can stay source-only while WordPress.org SVN receives the runnable plugin files required for installation.
 
 ## Product scope
 
