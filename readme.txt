@@ -49,6 +49,11 @@ Not in the current MVP. The sidebar is preview-first and only exposes a quick no
 
 Applied schema preview reads the saved frontend HTML, so it only works for publicly viewable entries.
 
+== Screenshots ==
+
+1. Gutenberg sidebar with SERP and Open Graph previews alongside the editor.
+2. Applied schema viewer with readable entity summaries and an optional raw JSON-LD panel.
+
 == Changelog ==
 
 = 0.1.0 =

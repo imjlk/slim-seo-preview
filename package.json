@@ -10,6 +10,8 @@
   "scripts": {
     "build": "wp-scripts build",
     "start": "wp-scripts start",
+    "i18n:pot": "node ./scripts/i18n.mjs pot",
+    "i18n:build": "node ./scripts/i18n.mjs build",
     "plugin-zip": "wp-scripts plugin-zip",
     "plugin-zip:org": "node ./scripts/package-org.mjs",
     "slim-seo:clone": "node ./scripts/slim-seo.mjs clone",

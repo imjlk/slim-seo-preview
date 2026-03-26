@@ -75,6 +75,12 @@ Create production assets:
 npm run build
 ```
 
+Refresh translation files:
+
+```bash
+npm run i18n:build
+```
+
 Create a WordPress.org submission package with source + build files and without local dev-only dotfiles:
 
 ```bash
@@ -102,8 +108,16 @@ GitHub is source-only in this repository. Built assets are generated locally for
 5. GitHub Actions will:
    - install dependencies
    - build `build/`
+   - validate the package build on every push/PR
    - assemble a WordPress.org-ready package in `artifacts/submission/slim-seo-preview`
    - deploy that package to the WordPress.org SVN repository
+
+### Review workflow
+
+- `submitted-0.1.0` marks the exact code submitted for the initial 0.1.0 review.
+- Continue new work on `main`.
+- If WordPress.org asks for review fixes before approval, create `review/0.1.0` from `submitted-0.1.0` and keep that branch limited to review blockers.
+- After approval, merge or cherry-pick those fixes back into `main`.
 
 ### What lands in WordPress.org SVN
 
