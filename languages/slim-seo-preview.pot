@@ -9,14 +9,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-03-25T12:02:49+00:00\n"
+"POT-Creation-Date: 2026-03-26T01:54:17+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: slim-seo-preview\n"
 
 #. Plugin Name of the plugin
 #: slim-seo-preview.php
-#: src/index.js:1086
+#: src/index.js:1262
 msgid "Slim SEO Preview"
 msgstr ""
 
@@ -39,7 +39,7 @@ msgid "Slim SEO Preview requires Slim SEO to stay active."
 msgstr ""
 
 #: src/Editor.php:87
-#: src/index.js:1168
+#: src/index.js:1344
 msgid "You do not have permission to update SEO settings for this item."
 msgstr ""
 
@@ -52,12 +52,12 @@ msgid "This post type is globally set to noindex in Slim SEO, so the per-post to
 msgstr ""
 
 #: src/Editor.php:90
-#: src/index.js:1184
+#: src/index.js:1360
 msgid "Jump to Slim SEO meta box"
 msgstr ""
 
 #: src/Editor.php:91
-#: src/index.js:1185
+#: src/index.js:1361
 msgid "The Slim SEO meta box could not be found on this screen."
 msgstr ""
 
@@ -112,255 +112,293 @@ msgstr ""
 msgid "JSON-LD Script %d"
 msgstr ""
 
-#: src/index.js:191
-#: src/index.js:371
-msgid "Preview"
-msgstr ""
-
-#: src/index.js:193
-#: src/index.js:351
-#: src/index.js:404
-#: src/index.js:586
-#: src/index.js:623
-msgid "URL preview unavailable"
-msgstr ""
-
-#: src/index.js:211
-msgid "SEO title preview will appear here."
-msgstr ""
-
-#: src/index.js:214
-msgid "Meta description preview will appear here."
-msgstr ""
-
-#: src/index.js:223
-msgid "All"
-msgstr ""
-
-#: src/index.js:225
-msgid "Images"
-msgstr ""
-
-#: src/index.js:226
-msgid "News"
-msgstr ""
-
-#: src/index.js:228
-msgid "Videos"
-msgstr ""
-
-#: src/index.js:249
-#: src/index.js:1014
-msgid "Search preview"
-msgstr ""
-
-#: src/index.js:259
-#: src/index.js:303
-msgid "Search"
-msgstr ""
-
-#: src/index.js:272
-msgid "Previewing how this result could appear on a desktop search page."
-msgstr ""
-
-#: src/index.js:331
-#: src/index.js:511
-msgid "SERP Preview"
-msgstr ""
-
-#: src/index.js:338
-msgid "Noindex"
-msgstr ""
-
-#: src/index.js:342
-#: src/index.js:577
-msgid "Title"
-msgstr ""
-
-#: src/index.js:346
-#: src/index.js:581
+#: src/index.js:161
+#: src/index.js:443
+#: src/index.js:757
 msgid "Description"
 msgstr ""
 
-#: src/index.js:350
-#: src/index.js:585
-msgid "Canonical"
-msgstr ""
-
-#: src/index.js:354
-msgid "Open SERP preview"
-msgstr ""
-
-#: src/index.js:362
-msgid "Open Graph Preview"
-msgstr ""
-
-#: src/index.js:375
-msgid "Open Graph"
-msgstr ""
-
-#: src/index.js:376
-msgid "OG title preview will appear here."
-msgstr ""
-
-#: src/index.js:377
-msgid "OG description preview will appear here."
-msgstr ""
-
-#: src/index.js:390
-msgid "Applied Schema"
-msgstr ""
-
-#: src/index.js:403
-#: src/index.js:622
+#: src/index.js:165
+#: src/index.js:500
+#: src/index.js:798
 msgid "Source URL"
 msgstr ""
 
-#: src/index.js:407
-msgid "Scripts found"
+#: src/index.js:171
+msgid "Author"
 msgstr ""
 
-#: src/index.js:410
-#: src/index.js:418
-msgid "Loading…"
+#: src/index.js:175
+msgid "Publisher"
 msgstr ""
 
-#: src/index.js:415
-msgid "Entities found"
+#: src/index.js:179
+msgid "Published"
 msgstr ""
 
-#: src/index.js:423
-msgid "Last fetched"
+#: src/index.js:183
+msgid "Modified"
+msgstr ""
+
+#: src/index.js:187
+msgid "Image"
+msgstr ""
+
+#: src/index.js:191
+msgid "Items"
+msgstr ""
+
+#: src/index.js:288
+#: src/index.js:468
+msgid "Preview"
+msgstr ""
+
+#: src/index.js:290
+#: src/index.js:448
+#: src/index.js:501
+#: src/index.js:762
+#: src/index.js:799
+msgid "URL preview unavailable"
+msgstr ""
+
+#: src/index.js:308
+msgid "SEO title preview will appear here."
+msgstr ""
+
+#: src/index.js:311
+msgid "Meta description preview will appear here."
+msgstr ""
+
+#: src/index.js:320
+msgid "All"
+msgstr ""
+
+#: src/index.js:322
+msgid "Images"
+msgstr ""
+
+#: src/index.js:323
+msgid "News"
+msgstr ""
+
+#: src/index.js:325
+msgid "Videos"
+msgstr ""
+
+#: src/index.js:346
+#: src/index.js:1190
+msgid "Search preview"
+msgstr ""
+
+#: src/index.js:356
+#: src/index.js:400
+msgid "Search"
+msgstr ""
+
+#: src/index.js:369
+msgid "Previewing how this result could appear on a desktop search page."
 msgstr ""
 
 #: src/index.js:428
-msgid "Reads the saved frontend JSON-LD currently rendered on the page. Unsaved editor changes are not included."
+#: src/index.js:687
+msgid "SERP Preview"
+msgstr ""
+
+#: src/index.js:435
+msgid "Noindex"
 msgstr ""
 
 #: src/index.js:439
-#: src/index.js:671
-msgid "No JSON-LD schema was found on the rendered page."
+#: src/index.js:753
+msgid "Title"
 msgstr ""
 
-#: src/index.js:450
-#: src/index.js:646
-msgid "Refreshing…"
+#: src/index.js:447
+#: src/index.js:761
+msgid "Canonical"
 msgstr ""
 
 #: src/index.js:451
-#: src/index.js:647
-msgid "Refresh applied schema"
+msgid "Open SERP preview"
 msgstr ""
 
-#: src/index.js:458
-msgid "Open schema preview"
+#: src/index.js:459
+msgid "Open Graph Preview"
 msgstr ""
 
 #: src/index.js:472
-msgid "entities"
+msgid "Open Graph"
 msgstr ""
 
 #: src/index.js:473
-msgid "Invalid JSON-LD"
+msgid "OG title preview will appear here."
 msgstr ""
 
-#: src/index.js:478
-msgid "Slim SEO graph"
+#: src/index.js:474
+msgid "OG description preview will appear here."
 msgstr ""
 
-#: src/index.js:518
-msgid "Compare how the saved page may appear in desktop and mobile search results."
+#: src/index.js:487
+msgid "Applied Schema"
 msgstr ""
 
-#: src/index.js:526
-msgid "Device Preview"
+#: src/index.js:504
+msgid "Scripts found"
+msgstr ""
+
+#: src/index.js:507
+#: src/index.js:515
+msgid "Loading…"
+msgstr ""
+
+#: src/index.js:512
+msgid "Entities found"
+msgstr ""
+
+#: src/index.js:520
+msgid "Last fetched"
+msgstr ""
+
+#: src/index.js:525
+msgid "Reads the saved frontend JSON-LD currently rendered on the page. Unsaved editor changes are not included."
 msgstr ""
 
 #: src/index.js:536
+#: src/index.js:847
+msgid "No JSON-LD schema was found on the rendered page."
+msgstr ""
+
+#: src/index.js:547
+#: src/index.js:822
+msgid "Refreshing…"
+msgstr ""
+
+#: src/index.js:548
+#: src/index.js:823
+msgid "Refresh applied schema"
+msgstr ""
+
+#: src/index.js:555
+msgid "Open schema preview"
+msgstr ""
+
+#: src/index.js:574
+msgid "entities"
+msgstr ""
+
+#: src/index.js:575
+msgid "Invalid JSON-LD"
+msgstr ""
+
+#: src/index.js:580
+msgid "Slim SEO graph"
+msgstr ""
+
+#: src/index.js:604
+msgid "Entity"
+msgstr ""
+
+#: src/index.js:613
+msgid "Untitled entity"
+msgstr ""
+
+#: src/index.js:668
+msgid "View raw JSON-LD"
+msgstr ""
+
+#: src/index.js:694
+msgid "Compare how the saved page may appear in desktop and mobile search results."
+msgstr ""
+
+#: src/index.js:702
+msgid "Device Preview"
+msgstr ""
+
+#: src/index.js:712
 msgid "Desktop"
 msgstr ""
 
-#: src/index.js:541
+#: src/index.js:717
 msgid "Mobile"
 msgstr ""
 
-#: src/index.js:571
+#: src/index.js:747
 msgid "Source"
 msgstr ""
 
-#: src/index.js:601
+#: src/index.js:777
 msgid "Applied Schema Preview"
 msgstr ""
 
-#: src/index.js:608
+#: src/index.js:784
 msgid "This reads the saved frontend JSON-LD currently rendered on the page, after Slim SEO hooks and filters run."
 msgstr ""
 
-#: src/index.js:616
+#: src/index.js:792
 msgid "Overview"
 msgstr ""
 
-#: src/index.js:626
+#: src/index.js:802
 msgid "Scripts"
 msgstr ""
 
-#: src/index.js:630
+#: src/index.js:806
 msgid "Entities"
 msgstr ""
 
-#: src/index.js:634
+#: src/index.js:810
 msgid "Fetched"
 msgstr ""
 
-#: src/index.js:653
+#: src/index.js:829
 msgid "Rendered Scripts"
 msgstr ""
 
-#: src/index.js:866
-#: src/index.js:981
+#: src/index.js:1042
+#: src/index.js:1157
 msgid "Slim SEO Preview could not load Slim SEO data."
 msgstr ""
 
-#: src/index.js:915
+#: src/index.js:1091
 msgid "Slim SEO Preview could not load the applied schema graph."
 msgstr ""
 
-#: src/index.js:1000
+#: src/index.js:1176
 msgid "Noindex (locked by post type setting)"
 msgstr ""
 
-#: src/index.js:1001
+#: src/index.js:1177
 msgid "Noindex (set for this item)"
 msgstr ""
 
-#: src/index.js:1002
+#: src/index.js:1178
 msgid "Index"
 msgstr ""
 
-#: src/index.js:1059
+#: src/index.js:1235
 msgid "Failed to update the noindex state. Use the Slim SEO meta box below instead."
 msgstr ""
 
-#: src/index.js:1132
+#: src/index.js:1308
 msgid "Quick Controls"
 msgstr ""
 
-#: src/index.js:1138
+#: src/index.js:1314
 msgid "Indexing status"
 msgstr ""
 
-#: src/index.js:1150
+#: src/index.js:1326
 msgid "This post type is globally set to noindex in Slim SEO."
 msgstr ""
 
-#: src/index.js:1161
+#: src/index.js:1337
 msgid "Hide from search results"
 msgstr ""
 
-#: src/index.js:1170
+#: src/index.js:1346
 msgid "Per-post editing is disabled because the whole post type is globally set to noindex."
 msgstr ""
 
-#: src/index.js:1171
+#: src/index.js:1347
 msgid "This quick toggle saves directly from the sidebar. Other SEO fields still live in the Slim SEO meta box below."
 msgstr ""

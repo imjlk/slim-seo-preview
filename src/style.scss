@@ -465,6 +465,12 @@
 	padding: 12px 18px 0;
 }
 
+.ssp-schema-script__content {
+	display: grid;
+	gap: 14px;
+	padding: 14px 18px 18px;
+}
+
 .ssp-schema-chip {
 	display: inline-flex;
 	align-items: center;
@@ -476,13 +482,120 @@
 	color: #50575e;
 }
 
+.ssp-schema-entities {
+	display: grid;
+	gap: 12px;
+}
+
+.ssp-schema-entity {
+	padding: 14px;
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+	background: #fff;
+}
+
+.ssp-schema-entity__header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 12px;
+	margin-bottom: 12px;
+}
+
+.ssp-schema-entity__eyebrow {
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #646970;
+}
+
+.ssp-schema-entity__title {
+	margin-top: 4px;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 1.4;
+	color: #1d2327;
+	word-break: break-word;
+}
+
+.ssp-schema-entity__anchor {
+	flex-shrink: 0;
+	max-width: 220px;
+	padding: 5px 9px;
+	border-radius: 999px;
+	background: #f6f7f7;
+	font-size: 11px;
+	font-weight: 600;
+	color: #50575e;
+	word-break: break-word;
+}
+
+.ssp-schema-entity__facts {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 10px;
+}
+
+.ssp-schema-fact {
+	padding: 10px 12px;
+	border-radius: 6px;
+	background: #f6f7f7;
+}
+
+.ssp-schema-fact__label {
+	margin-bottom: 4px;
+	font-size: 11px;
+	font-weight: 600;
+	color: #646970;
+}
+
+.ssp-schema-fact__value {
+	font-size: 13px;
+	line-height: 1.5;
+	color: #1d2327;
+	word-break: break-word;
+}
+
+.ssp-schema-script__raw {
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+	background: #fff;
+	overflow: hidden;
+}
+
+.ssp-schema-script__raw summary {
+	cursor: pointer;
+	padding: 12px 14px;
+	font-size: 13px;
+	font-weight: 600;
+	color: #1d2327;
+	list-style: none;
+}
+
+.ssp-schema-script__raw summary::-webkit-details-marker {
+	display: none;
+}
+
+.ssp-schema-script__raw summary::after {
+	content: '+';
+	float: right;
+	font-size: 15px;
+	color: #646970;
+}
+
+.ssp-schema-script__raw[open] summary::after {
+	content: '−';
+}
+
 .ssp-schema-script__code {
-	margin: 14px 18px 18px;
+	margin: 0;
 	padding: 16px;
 	max-height: 420px;
 	overflow: auto;
-	border-radius: 6px;
-	background: #fff;
+	border-top: 1px solid #dcdcde;
+	border-radius: 0;
+	background: #f8f9fa;
 	font-family:
 		ui-monospace,
 		SFMono-Regular,

@@ -22,6 +22,30 @@
             "The Slim SEO meta box could not be found on this screen.": [
                 "\uc774 \ud654\uba74\uc5d0\uc11c Slim SEO \uba54\ud0c0 \ubc15\uc2a4\ub97c \ucc3e\uc744 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4."
             ],
+            "Description": [
+                "\uc124\uba85"
+            ],
+            "Source URL": [
+                "\uc6d0\ubcf8 URL"
+            ],
+            "Author": [
+                "\uc791\uc131\uc790"
+            ],
+            "Publisher": [
+                "\uac8c\uc2dc\uc790"
+            ],
+            "Published": [
+                "\uac8c\uc2dc\uc77c"
+            ],
+            "Modified": [
+                "\uc218\uc815\uc77c"
+            ],
+            "Image": [
+                "\uc774\ubbf8\uc9c0"
+            ],
+            "Items": [
+                "\ud56d\ubaa9 \uc218"
+            ],
             "Preview": [
                 "\ubbf8\ub9ac\ubcf4\uae30"
             ],
@@ -64,9 +88,6 @@
             "Title": [
                 "\uc81c\ubaa9"
             ],
-            "Description": [
-                "\uc124\uba85"
-            ],
             "Canonical": [
                 "Canonical"
             ],
@@ -87,9 +108,6 @@
             ],
             "Applied Schema": [
                 "\uc801\uc6a9\ub41c \uc2a4\ud0a4\ub9c8"
-            ],
-            "Source URL": [
-                "\uc6d0\ubcf8 URL"
             ],
             "Scripts found": [
                 "\ucc3e\uc740 \uc2a4\ud06c\ub9bd\ud2b8"
@@ -126,6 +144,15 @@
             ],
             "Slim SEO graph": [
                 "Slim SEO \uadf8\ub798\ud504"
+            ],
+            "Entity": [
+                "\uc5d4\ud2f0\ud2f0"
+            ],
+            "Untitled entity": [
+                "\uc81c\ubaa9 \uc5c6\ub294 \uc5d4\ud2f0\ud2f0"
+            ],
+            "View raw JSON-LD": [
+                "\uc6d0\ubcf8 JSON-LD \ubcf4\uae30"
             ],
             "Compare how the saved page may appear in desktop and mobile search results.": [
                 "\uc800\uc7a5\ub41c \ud398\uc774\uc9c0\uac00 \ub370\uc2a4\ud06c\ud1b1\uacfc \ubaa8\ubc14\uc77c \uac80\uc0c9 \uacb0\uacfc\uc5d0\uc11c \uc5b4\ub5bb\uac8c \ubcf4\uc77c\uc9c0 \ube44\uad50\ud574\ubcf4\uc138\uc694."

@@ -97,6 +97,103 @@ const formatTimestamp = ( value ) => {
 	}
 };
 
+const getSchemaValueText = ( value ) => {
+	if ( value === null || value === undefined ) {
+		return '';
+	}
+
+	if ( typeof value === 'string' || typeof value === 'number' || typeof value === 'boolean' ) {
+		return String( value );
+	}
+
+	if ( Array.isArray( value ) ) {
+		return value
+			.map( ( item ) => getSchemaValueText( item ) )
+			.filter( Boolean )
+			.slice( 0, 3 )
+			.join( ', ' );
+	}
+
+	if ( typeof value === 'object' ) {
+		return getSchemaValueText(
+			value.name ??
+				value.headline ??
+				value.url ??
+				value['@id'] ??
+				value['@type']
+		);
+	}
+
+	return '';
+};
+
+const getSchemaEntityType = ( entity ) => {
+	const rawTypes = Array.isArray( entity?.['@type'] )
+		? entity['@type']
+		: [ entity?.['@type'] ];
+
+	return rawTypes.find( ( type ) => typeof type === 'string' && type ) || '';
+};
+
+const getSchemaEntities = ( value ) => {
+	if ( ! value || typeof value !== 'object' ) {
+		return [];
+	}
+
+	if ( Array.isArray( value ) ) {
+		return value.flatMap( ( item ) => getSchemaEntities( item ) );
+	}
+
+	if ( Array.isArray( value['@graph'] ) ) {
+		return value['@graph'].flatMap( ( item ) => getSchemaEntities( item ) );
+	}
+
+	return [ value ];
+};
+
+const getSchemaEntityFacts = ( entity ) => {
+	const itemCount = Array.isArray( entity?.itemListElement )
+		? String( entity.itemListElement.length )
+		: '';
+
+	return [
+		{
+			label: __( 'Description', 'slim-seo-preview' ),
+			value: getSchemaValueText( entity?.description ),
+		},
+		{
+			label: __( 'Source URL', 'slim-seo-preview' ),
+			value: getSchemaValueText(
+				entity?.url ?? entity?.mainEntityOfPage ?? entity?.['@id']
+			),
+		},
+		{
+			label: __( 'Author', 'slim-seo-preview' ),
+			value: getSchemaValueText( entity?.author ),
+		},
+		{
+			label: __( 'Publisher', 'slim-seo-preview' ),
+			value: getSchemaValueText( entity?.publisher ),
+		},
+		{
+			label: __( 'Published', 'slim-seo-preview' ),
+			value: formatTimestamp( entity?.datePublished ),
+		},
+		{
+			label: __( 'Modified', 'slim-seo-preview' ),
+			value: formatTimestamp( entity?.dateModified ),
+		},
+		{
+			label: __( 'Image', 'slim-seo-preview' ),
+			value: getSchemaValueText( entity?.image ),
+		},
+		{
+			label: __( 'Items', 'slim-seo-preview' ),
+			value: itemCount,
+		},
+	].filter( ( fact ) => fact.value );
+};
+
 const getMetaboxFieldValue = ( root, selector ) => {
 	const field = root?.querySelector( selector );
 	return field && typeof field.value === 'string' ? field.value : undefined;
@@ -462,42 +559,121 @@ const SchemaPreviewSection = ( {
 	</PanelBody>
 );
 
-const SchemaScriptCard = ( { script } ) => (
-	<article className="ssp-schema-script">
-		<div className="ssp-schema-script__header">
-			<div>
-				<div className="ssp-schema-script__title">{ script.label }</div>
-				<div className="ssp-schema-script__meta">
-					{ script.isValid
-						? `${ script.entityCount } ${ __( 'entities', 'slim-seo-preview' ) }`
-						: __( 'Invalid JSON-LD', 'slim-seo-preview' ) }
+const SchemaScriptCard = ( { script } ) => {
+	const entities = script.isValid
+		? getSchemaEntities( JSON.parse( script.rawJson || script.prettyJson || 'null' ) )
+		: [];
+
+	return (
+		<article className="ssp-schema-script">
+			<div className="ssp-schema-script__header">
+				<div>
+					<div className="ssp-schema-script__title">{ script.label }</div>
+					<div className="ssp-schema-script__meta">
+						{ script.isValid
+							? `${ script.entityCount } ${ __( 'entities', 'slim-seo-preview' ) }`
+							: __( 'Invalid JSON-LD', 'slim-seo-preview' ) }
+					</div>
 				</div>
+				{ script.isSlimSeo && (
+					<span className="ssp-badge ssp-badge--neutral">
+						{ __( 'Slim SEO graph', 'slim-seo-preview' ) }
+					</span>
+				) }
 			</div>
-			{ script.isSlimSeo && (
-				<span className="ssp-badge ssp-badge--neutral">
-					{ __( 'Slim SEO graph', 'slim-seo-preview' ) }
-				</span>
-			) }
-		</div>
 
-		<div className="ssp-schema-script__chips">
-			{ script.id && (
-				<span className="ssp-schema-chip">
-					{ `#${ script.id }` }
-				</span>
-			) }
-			{ script.types?.map( ( type ) => (
-				<span key={ type } className="ssp-schema-chip">
-					{ type }
-				</span>
-			) ) }
-		</div>
+			<div className="ssp-schema-script__chips">
+				{ script.id && (
+					<span className="ssp-schema-chip">
+						{ `#${ script.id }` }
+					</span>
+				) }
+				{ script.types?.map( ( type ) => (
+					<span key={ type } className="ssp-schema-chip">
+						{ type }
+					</span>
+				) ) }
+			</div>
 
-		<pre className="ssp-schema-script__code">
-			<code>{ script.prettyJson || script.rawJson }</code>
-		</pre>
-	</article>
-);
+			<div className="ssp-schema-script__content">
+				{ entities.length > 0 && (
+					<div className="ssp-schema-entities">
+						{ entities.map( ( entity, index ) => {
+							const typeLabel =
+								getSchemaEntityType( entity ) ||
+								__( 'Entity', 'slim-seo-preview' );
+							const primaryValue =
+								getSchemaValueText(
+									entity?.name ??
+										entity?.headline ??
+										entity?.alternateName ??
+										entity?.url ??
+										entity?.['@id']
+								) ||
+								__( 'Untitled entity', 'slim-seo-preview' );
+							const facts = getSchemaEntityFacts( entity );
+							const entityKey =
+								getSchemaValueText( entity?.['@id'] ) ||
+								getSchemaValueText( entity?.url ) ||
+								`${ script.index }-${ index }`;
+
+							return (
+								<div key={ entityKey } className="ssp-schema-entity">
+									<div className="ssp-schema-entity__header">
+										<div>
+											<div className="ssp-schema-entity__eyebrow">
+												{ typeLabel }
+											</div>
+											<div className="ssp-schema-entity__title">
+												{ primaryValue }
+											</div>
+										</div>
+										{ entity?.['@id'] && (
+											<div className="ssp-schema-entity__anchor">
+												{ clipText(
+													getSchemaValueText( entity['@id'] ),
+													40
+												) }
+											</div>
+										) }
+									</div>
+
+									{ facts.length > 0 && (
+										<div className="ssp-schema-entity__facts">
+											{ facts.map( ( fact ) => (
+												<div
+													key={ `${ entityKey }-${ fact.label }` }
+													className="ssp-schema-fact"
+												>
+													<div className="ssp-schema-fact__label">
+														{ fact.label }
+													</div>
+													<div className="ssp-schema-fact__value">
+														{ fact.value }
+													</div>
+												</div>
+											) ) }
+										</div>
+									) }
+								</div>
+							);
+						} ) }
+					</div>
+				) }
+
+				<details
+					className="ssp-schema-script__raw"
+					open={ !script.isValid || entities.length === 0 }
+				>
+					<summary>{ __( 'View raw JSON-LD', 'slim-seo-preview' ) }</summary>
+					<pre className="ssp-schema-script__code">
+						<code>{ script.prettyJson || script.rawJson }</code>
+					</pre>
+				</details>
+			</div>
+		</article>
+	);
+};
 
 const SerpPreviewModal = ( {
 	title,
